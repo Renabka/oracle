@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #161616; -webkit-text-stroke: #161616; background-color: #ffffff; min-height: 18.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;style&gt;</span></p>
+<p class="p1"><span class="s1">    body {</span></p>
+<p class="p1"><span class="s1">      background-color: #123423;</span></p>
+<p class="p1"><span class="s1">      display: flex;</span></p>
+<p class="p1"><span class="s1">      justify-content: center;</span></p>
+<p class="p1"><span class="s1">      align-items: center;</span></p>
+<p class="p1"><span class="s1">      height: 100vh;</span></p>
+<p class="p1"><span class="s1">      margin: 0;</span></p>
+<p class="p1"><span class="s1">      font-family: 'Georgia', serif;</span></p>
+<p class="p1"><span class="s1">      color: #fff;</span></p>
+<p class="p1"><span class="s1">    }</span></p>
+<p class="p1"><span class="s1">    .card {</span></p>
+<p class="p1"><span class="s1">      max-width: 500px;</span></p>
+<p class="p1"><span class="s1">      text-align: center;</span></p>
+<p class="p1"><span class="s1">      padding: 30px;</span></p>
+<p class="p1"><span class="s1">    }</span></p>
+<p class="p1"><span class="s1">    .card img {</span></p>
+<p class="p1"><span class="s1">      width: 100%;</span></p>
+<p class="p1"><span class="s1">      border-radius: 12px;</span></p>
+<p class="p1"><span class="s1">      box-shadow: 0 6px 20px rgba(0,0,0,0.4);</span></p>
+<p class="p1"><span class="s1">    }</span></p>
+<p class="p1"><span class="s1">    .card p {</span></p>
+<p class="p1"><span class="s1">      margin-top: 20px;</span></p>
+<p class="p1"><span class="s1">      font-size: 1.2em;</span></p>
+<p class="p1"><span class="s1">      color: #f2f2f2;</span></p>
+<p class="p1"><span class="s1">    }</span></p>
+<p class="p1"><span class="s1">  &lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;div class="card" id="oracleCard"&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">  &lt;script&gt;</span></p>
+<p class="p1"><span class="s1">    const cards = [</span></p>
+<p class="p1"><span class="s1">      {</span></p>
+<p class="p1"><span class="s1">        image: "https://static.wixstatic.com/media/1543c9_0dd9afbede4747518786deafa2281d7e~mv2.jpg",</span></p>
+<p class="p1"><span class="s1">        message: "Modern society often teaches us to follow the orders of others. We get used to this and forget that we can create our paths. This oracle asks you to trust yourself, and trust within that you can forge a new path even if you don't have examples around you for how it's done. Trust in your heart, and take one step at a time to create the reality you desire.."</span></p>
+<p class="p1"><span class="s1">      },</span></p>
+<p class="p1"><span class="s1">      {</span></p>
+<p class="p1"><span class="s1">        image: " https://static.wixstatic.com/media/1543c9_3d26057136ea4cc78b8b82b37ff18757~mv2.jpg",</span></p>
+<p class="p1"><span class="s1">        message: " This oracle asks you to spend time with positive visionary women. That means get on that phone, beauty, and make some fun plans for the upcoming week. Even if it feels impossible, this is healing medicine you need right now."</span></p>
+<p class="p1"><span class="s1">      },</span></p>
+<p class="p1"><span class="s1">      {</span></p>
+<p class="p1"><span class="s1">        image: "https://static.wixstatic.com/media/1543c9_673c82fe881b4a968731cea200ce0923~mv2.jpg",</span></p>
+<p class="p1"><span class="s1">        message: " If you've been uncertain about your next step, this card reminds you to put reflection and time into getting clear about what you want, and creating the life state to achieve it. You are a diamond in the rough. What do you need in order to shine?"</span></p>
+<p class="p1"><span class="s1">      }</span></p>
+<p class="p1"><span class="s1">    ];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">    const randomCard = cards[Math.floor(Math.random() * cards.length)];</span></p>
+<p class="p1"><span class="s1">    document.getElementById("oracleCard").innerHTML = `</span></p>
+<p class="p1"><span class="s1">      &lt;img src="${randomCard.image}" alt="Oracle Card"&gt;</span></p>
+<p class="p1"><span class="s1">      &lt;p&gt;${randomCard.message}&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">    `;</span></p>
+<p class="p1"><span class="s1">  &lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+</body>
+</html>
